@@ -6,20 +6,39 @@
     <title>Domain Seized Banner</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         img {
             width: 960px;
             height: 720px;
+            margin-top: 20px;
+        }
+        .spacer {
+            height: 500px; /* Adjust this height to control the amount of scrolling */
+        }
+        .footer {
+            margin: 20px;
+            font-size: 16px;
+        }
+        .footer a {
+            color: #d9d9d9; /* Slightly darker than the background color #f0f0f0 */
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <img src="_seized_domain_banner.jpg" alt="Seized Domain Banner">
+    
+    <!-- Invisible spacer to make the page scrollable -->
+    <div class="spacer"></div>
+    
+    <!-- Footer with LinkedIn link -->
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/andrew-zhanger/" target="_blank">Connect with me on LinkedIn</a>
+    </div>
 </body>
 </html>
